@@ -62,7 +62,7 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+@media (max-width: 600px){
   .checkbtn{
     display: block;
     margin-right: 40px;
