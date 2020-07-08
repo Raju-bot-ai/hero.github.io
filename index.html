@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>AngelaInstitute</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+
+<body>
+  <header>
+    <div class="tophead">
+      <div class="logo">B.I.T SINDRI</div>
+      <div class="menu" onclick="opennav()">
+        &#9776;
+      </div>
+
+    </div>
+  </header>
+ <div class="sidenav" id="mySidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+   <a  target="_blank" href="https://twitter.com/angelawhite?lang=en"><i class="fa fa-home" aria-hidden="true"></i>home</a>
+   <a  target="_blank" href="https://twitter.com/angelawhite?lang=en"><i class="fa fa-home" aria-hidden="true"></i>gallary</a>
+    <a  target="_blank" href="https://twitter.com/angelawhite?lang=en"><i class="fa fa-home" aria-hidden="true"></i>about us</a>
+    <a target="_blank"  href="https://twitter.com/angelawhite?lang=en"><i class="fa fa-home" aria-hidden="true"></i>service</a>
+ </div>
+<div class="container">
+    <h2>
+        Welcome to B.I.T SINDRI
+    </h2>
+    <p>
+        Enter the details to take admission in this institute
+    </p>
+</div>
+<div class="form">
+    <form action="home.php" method="POST"><br>
+        <input type="text" name="name" placeholder="Enter your name" required autocomplete="off" id="name"><br>
+        <input type="number" name="phone" placeholder="Enter your mobile" id="mobile"><br>
+        <input type="radio" name="gender" id="male" required><span style="font-size: 19px; color: white;">Male</span> 
+        <input type="radio" required name="gender" id="male"><span style="font-size: 19px;color: white;">Female</span><br>
+        <input type="number" id="age" placeholder="Enter your age"><br>
+        <span style="color: white;font-size: 19px;">Your favorite color <input type="color" id="color"></span><br>
+        <textarea id="desc" name="desc" placeholder="give any query" rows="5" cols="20"></textarea><br>
+        <input type="submit" name="submit" id="submit" style="background-color: rgb(57, 101, 223);">
+    </form>
+</div>
+
+<script >
+  function opennav(){
+    document.getElementById('mySidenav').style.width="250px";
+  }
+  function closenav(){
+    document.getElementById("mySidenav").style.width="0px";
+  }
+</script>
+</body>
+
+</html>
+<!-- INSERT INTO `trip` (`s.no`, `name`, `phone`, `gender`, `age`, `color`, `description`) VALUES ('1', 'raju', '1234567897', 'male', '20', 'red', 'hello'); -->
